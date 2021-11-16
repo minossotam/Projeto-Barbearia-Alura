@@ -1,0 +1,248 @@
+@charset "UTF-8"
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-benefecios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: lightgray;
+    padding: 20px 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+a:hover{
+    color: gray;
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+}
+.produtos li:hover{
+    border-color: darkgrey;
+}
+.produtos li:active{
+    border-color: darkslategrey;
+}
+.produtos li:hover h2{
+    font-size: 33px;
+}
+.produtos h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descricao{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.produto-preco{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px ;
+    margin: 0 auto;
+}
+.copyright{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    font-weight: bold;
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px ;
+}
+
+/*CSS da página inicial*/
+
+.banner{
+    width: 100%;
+}
+.titulo-principal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgba(0, 0, 0, 0.3); /*opacidade cor rgba */
+    text-shadow: 2px 2px 1px black;
+}
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+.titulo-principal::before{
+    content:"[ "
+}
+.titulo-principal::after{
+    content: " ]";
+}
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+.principal p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.principal em{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.ultensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+
+}
+.mapa{
+    padding: 6em 0;
+    background: linear-gradient(#fefefe,#888888);
+}
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.mapa p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 2em;
+    text-align: center;
+}
+.beneficios{
+    padding: 3m 0;
+    background: #888888;
+    margin: 0;
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficios{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itens{
+    line-height: 1.5;
+}
+.itens:first-child{
+    font-weight: bold;
+}
+.itens:before{
+    content:"★  ";
+}
+.imagem-beneficios{
+    width: 60%;
+    opacity: 1;
+    transition: 200ms;
+    box-shadow: 10px 10px 30px 5px black, -5px -5px 30px 5px lightgray, -20px 20px darkgray;
+}
+.imagem-beneficios:hover{
+    opacity: 0.9;
+}
+.video{
+    width: 560px;
+    margin:  0 auto;
+    padding: 20px;
+}
+
+
+
+/*
+main > p{}  filho direto de main
+
+img + p{}   irmão direto de img
+
+img ~ p{}   todos irmãos diretos de img
+
+section > p + h2{}  seleciona "h2" que é irmão direto de "p" que é filho direto de "section"
+
+.principal p:not(#missao){}  seleciona todos o "p" de "principal" menos o com a classe "missao"
+*/

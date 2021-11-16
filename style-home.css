@@ -1,0 +1,48 @@
+    @charset "UTF-8"
+
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #banner{
+        width: 100%;
+    }
+    main{
+        background-color: lightgrey;
+        padding: 30px;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    #missao{
+        font-size: 20px;
+    }
+    em strong{
+        color: red;
+    }
+    article{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        padding: 20px;
+    }
+    ul{
+        display: inline-block;
+        vertical-align: top;
+        width: 15%;
+        margin-right: 10%;
+    }
+    .itens{
+        font-style: italic;
+    }
+    #beneficios{
+        width: 50%;   
+        
+    }
+    .titulocentralizado{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .tituloprincipal{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+    }
