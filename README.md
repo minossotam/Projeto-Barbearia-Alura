@@ -5,5 +5,9 @@ Projeto proposto pela plataforma Alura de criar o site de uma barbearia com pág
 
 
 
-https://user-images.githubusercontent.com/93089995/176793401-37e50673-edba-42d8-82e2-df486fdb1274.mp4
+
+
+
+
+https://user-images.githubusercontent.com/93089995/176795196-c4502556-c413-4b66-a2c1-a174e1751e46.mp4
 
